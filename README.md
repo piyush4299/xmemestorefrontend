@@ -41,7 +41,7 @@ $ npm install
 
 ## Run Application and start development Server
 To run this app in your browser just start everything whit the comment below in the applications root folder.
-It will update everything an start a simple web server on ``http://localhost:1337/``
+It will update everything an start a simple web server on ``http://localhost:4200/``
 ```SH
 $ ng serve
 ```
