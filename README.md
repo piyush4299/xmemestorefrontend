@@ -2,10 +2,6 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
 ### Table of Contents
 
 * [What is this?](#what-is-this)
@@ -13,11 +9,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 * [Requirements](#requirements)
 * [Installation](#installation)
 * [Run Application and start development Server](#run-application-and-start-development-server)
+* [Hosting](#Hosting)
 
 ---
 
 ## What is this?
-This is the frontend part of my XMEMESTORE application through which users can upload meme and also watch the memes deployed by others.There are some other features which are mentioned in below [Features](#features) section.
+This is the frontend part of my XMEMESTORE application through which users can upload meme and also watch the memes posted by others.There are some other features which are mentioned in below [Features](#features) section.
 
 ## Features
 Containing:
@@ -46,3 +43,6 @@ It will update everything an start a simple web server on ``http://localhost:420
 $ ng serve
 ```
 
+## Hosting
+The API is being hosted on given url.
+[Click here](https://gallant-shaw-d55a65.netlify.app/)
