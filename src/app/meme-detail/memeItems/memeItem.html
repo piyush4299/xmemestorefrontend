@@ -1,0 +1,17 @@
+<div class="col s12 m6">
+    <div class="card" style = "background-color: #3c8cf0;">
+    <span class="card-title">Meme Owner: {{ memeObject.name }}</span>
+    <div class="card-image imgContainer">
+        <img [src]="memeObject.memeURL" style= "object-fit:cover;" onerror="this.src='https://www.jco.fi/wp-content/uploads/2019/10/hero-blog-404.jpg'"/>
+    </div>
+        <div class="card-content">
+            <p>Caption: {{ memeObject.caption }}</p>
+        </div>
+            <a class="action-btn btn-floating waves-effect waves-light blue" (click)="onEdit(memeObject)">
+                <i class="material-icons">edit</i>
+            </a>
+            <a class="action-btn btn-floating waves-effect waves-light blue" (click)="onDelete(memeObject)">
+                <i class="material-icons">delete</i>
+            </a>
+    </div>
+</div>

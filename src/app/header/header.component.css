@@ -1,0 +1,14 @@
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    color:rgba(255, 255, 255, 0.952);
+    font-size:x-large;
+    background-color: #3c8cf0;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    padding: 15px;
+}

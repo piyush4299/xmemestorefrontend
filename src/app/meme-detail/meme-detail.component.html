@@ -1,0 +1,46 @@
+<div class="row container-fluid">
+  <div class="col s12">
+    <div class="card">
+      <div class="card-content white-text">
+        <div class="row">
+          <div class="col s5">
+            <form #memeDetailForm="ngForm" (ngSubmit)="onSubmit(memeDetailForm)">
+              <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="memeDetailService.selectedMeme._id">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="name" #name="ngModel" [(ngModel)]="memeDetailService.selectedMeme.name" placeholder="Enter Meme Owner name" required>
+                  <label>Meme Owner Name :
+                    <label class="red-text">*</label>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="caption" #name="ngModel" [(ngModel)]="memeDetailService.selectedMeme.caption" placeholder="Caption for meme">
+                  <label>Caption :</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="memeURL" #name="ngModel" [(ngModel)]="memeDetailService.selectedMeme.memeURL" placeholder="Enter meme image URL">
+                  <label>Meme(Image) URL :</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <button class="btn btn-custom right" type="button" (click)="resetForm(memeDetailForm)"><span style = "color: black;">Reset</span></button>
+                  <button class="btn btn-custom right" type="submit" [disabled]="!memeDetailForm.valid"><span style = "color: black;">Submit</span></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col s7">
+            <div *ngFor="let memeObject of memeDetailService.memeDetails">
+                <app-memeItem [memeObject] = "memeObject" (myEditEvent)="onEdit($event)" (myDeleteEvent) = "onDelete($event,memeDetailForm)"></app-memeItem>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
